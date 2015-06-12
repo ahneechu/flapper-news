@@ -9,8 +9,11 @@
 	<body ng-app="flapperNews">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-				<ui-view></ui-view>
+				<div ng-include="'nav/_nav.html'"></div>
+				<p class="notice"><%= notice %></p>
+		        <p class="alert"><%= alert %></p>
 
+				<ui-view></ui-view>
 			</div>
 		</div>
 	</body>
